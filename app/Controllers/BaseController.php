@@ -38,6 +38,12 @@ class BaseController extends Controller
     protected $helpers = [];
 
     /**
+     * 
+     * @var session
+     */
+    protected $session;
+
+    /**
      * Constructor.
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
