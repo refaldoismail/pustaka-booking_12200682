@@ -1,5 +1,7 @@
-<?=$this->extend('dasar_tampilan')?>
-<?=$this->section('isiweb')?>
+<?=$this->extend('template_dashboard')?>
+<?=$this->section('konten')?>
+
+
     <div class="container">
         <div class="card">
             <div class="card-header">
