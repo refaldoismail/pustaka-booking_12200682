@@ -25,6 +25,10 @@ $vd = $vd?: Services::validation();
                         <form method="post"action="/pengguna">
                             <input type="hidden" name="id" value="<?=$data['id'] ?? ''?>" />
 
+                           <?php if( isset($data['id'])): ?>
+                                <input type="hidden" name="_method" value="patch" />
+                            <?php endif; ?>
+                            
                             <div>
                                 <label for="txtNama" class="form-label">Nama</label>
                                 <input id="txtNama" type="text" name="nama" value="<?=$data['nama'] ?? ''?>" class="form-control"/>
